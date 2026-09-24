@@ -1,0 +1,14 @@
+{
+  "name": "Shop ND",
+  "short_name": "Shop ND",
+  "start_url": "./?go=1",
+  "scope": "./",
+  "display": "browser",
+  "background_color": "#FFF1E4",
+  "theme_color": "#241F1B",
+  "icons": [
+    {"src": "icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "icon-512.png", "sizes": "512x512", "type": "image/png"},
+    {"src": "icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable"}
+  ]
+}

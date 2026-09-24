@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop ND</title>
+<meta name="apple-mobile-web-app-title" content="Shop ND">
+<meta name="application-name" content="Shop ND">
+<meta name="theme-color" content="#241F1B">
+<link rel="apple-touch-icon" href="icon-180.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icon-152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icon-180.png">
+<link rel="icon" type="image/png" href="favicon-64.png">
+<link rel="manifest" href="manifest.webmanifest">
+<script>
+  // Endereco do app (Apps Script). Se a implantacao mudar, troque so esta linha.
+  var APP = 'https://script.google.com/macros/s/AKfycbxLyETC638Wx7Y4p8z3l2zq5SjbyOVE-eXyMVWBd2Y1CEeylR55Gsk5Qu24HoibCBQW/exec';
+  // Aberto pelo icone da tela inicial (?go=1): vai direto para o app.
+  if (/[?&]go=1/.test(location.search)) { location.replace(APP); }
+</script>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Arial,sans-serif;background:#FFF1E4;color:#241F1B;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
+  .c{max-width:420px;width:100%;text-align:center}
+  img{width:132px;height:132px;border-radius:30px;box-shadow:0 8px 28px rgba(120,70,20,.18)}
+  h1{font-size:22px;margin:20px 0 6px}
+  p{color:#6B6259;font-size:14px;line-height:1.55;margin:0 0 18px}
+  a.b{display:block;background:#FD852E;color:#fff;text-decoration:none;font-weight:800;font-size:16px;padding:16px;border-radius:14px;box-shadow:0 6px 18px rgba(253,133,46,.35)}
+  .box{background:#fff;border-radius:16px;padding:16px 18px;margin-top:20px;text-align:left;font-size:13.5px;line-height:1.6}
+  .box b{display:block;margin-bottom:4px}
+  .box ol{margin:4px 0 12px;padding-left:20px}
+</style>
+</head>
+<body>
+<div class="c">
+  <img src="icon-180.png" alt="Shop ND">
+  <h1>Shop ND</h1>
+  <p>Expedição, Produção e Vendas</p>
+  <a class="b" id="abrir" href="#">Abrir o app</a>
+  <div class="box">
+    <b>Instalar na tela inicial (uma vez só)</b>
+    iPhone (Safari):
+    <ol><li>Toque em Compartilhar (quadrado com seta)</li><li>Adicionar à Tela de Início</li><li>Adicionar</li></ol>
+    Android (Chrome):
+    <ol><li>Toque nos 3 pontinhos ⋮</li><li>Adicionar à tela inicial</li><li>Instalar / Adicionar</li></ol>
+    O ícone da Shop ND aparece na tela e abre o app direto.
+  </div>
+</div>
+<script>
+  document.getElementById('abrir').href = APP;
+  // Deixa o endereco com ?go=1 para o atalho salvo abrir o app direto.
+  try { history.replaceState(null, '', location.pathname + '?go=1'); } catch (e) {}
+</script>
+</body>
+</html>
