@@ -13,8 +13,10 @@
 <link rel="icon" type="image/png" href="favicon-64.png">
 <link rel="manifest" href="manifest.webmanifest">
 <script>
-  // Endereco do app (Apps Script). Se a implantacao mudar, troque so esta linha.
-  var APP = 'https://script.google.com/macros/s/AKfycbxLyETC638Wx7Y4p8z3l2zq5SjbyOVE-eXyMVWBd2Y1CEeylR55Gsk5Qu24HoibCBQW/exec';
+  // Endereco do app. Desde 07/10/26 e o app novo (Cloudflare, login por codigo no e-mail).
+  // App antigo (Apps Script), arquivado na virada:
+  //   https://script.google.com/macros/s/AKfycbxLyETC638Wx7Y4p8z3l2zq5SjbyOVE-eXyMVWBd2Y1CEeylR55Gsk5Qu24HoibCBQW/exec
+  var APP = 'https://shopnd-expedicao.pages.dev/';
   // Aberto pelo icone da tela inicial (?go=1): vai direto para o app.
   if (/[?&]go=1/.test(location.search)) { location.replace(APP); }
 </script>
